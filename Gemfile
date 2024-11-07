@@ -25,6 +25,11 @@ gem "puma", "~> 5.0"
 # gem "bcrypt", "~> 3.1.7"
 gem 'bcrypt', '~> 3.1', '>= 3.1.20'
 
+group :test do
+  # テスト結果色付け Doc: https://github.com/kern/minitest-reporters
+  gem 'minitest-reporters', '~> 1.7', '>= 1.7.1'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 #gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "tzinfo-data"
